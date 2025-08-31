@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+  color: white;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.tab.current-tab {
+  background: rgba(255,255,255,0.3);
+}
+
+.weather-container {
+  margin-top: 30px;
+}
+
+.sub-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.sub-container.active {
+  display: flex;
+}
+
+.btn {
+  background: #3f72af;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.form-container {
+  display: none;
+  gap: 10px;
+}
+
+.form-container input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-container.active {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info-container img {
+  width: 80px;
+}
+
+.parameter-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.parameter {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 8px;
+}

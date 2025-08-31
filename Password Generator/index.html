@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+            <input readonly placeholder="Your password will appear here" class="display" data-passworddisplay>
+            <button data-copy aria-label="Copy Password">
+                <span data-copyMsg></span>
+                <img src="https://img.icons8.com/material-outlined/24/ffffff/copy.png" alt="Copy Icon">
+            </button>
+        </div>
+
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-lengthnumber>0</p>
+            </div>
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+            <label class="check">
+                <input type="checkbox" id="uppercase">
+                Include Uppercase Letters
+            </label>
+            <label class="check">
+                <input type="checkbox" id="lowercase">
+                Include Lowercase Letters
+            </label>
+            <label class="check">
+                <input type="checkbox" id="number">
+                Include Numbers
+            </label>
+            <label class="check">
+                <input type="checkbox" id="symbols">
+                Include Symbols
+            </label>
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <div class="indicator" data-indicator></div>
+            </div>
+
+            <button id="generate-button">Generate Password</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

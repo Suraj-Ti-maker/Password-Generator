@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Weather App</h1>
+
+    <!-- Tabs -->
+    <div class="tab-container">
+      <p class="tab current-tab" data-userWeather>Your Weather</p>
+      <p class="tab" data-searchWeather>Search Weather</p>
+    </div>
+
+    <div class="weather-container">
+      
+      <!-- Location Access -->
+      <div class="sub-container grant-location-container active">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" width="80" />
+        <p>Grant Location Access</p>
+        <p>Allow access to get your weather information</p>
+        <button class="btn" data-grantAccess>Grant Access</button>
+      </div>
+
+      <!-- Search Form -->
+      <form class="form-container" data-searchForm>
+        <input placeholder="Search city..." data-searchInput />
+        <button type="submit" class="btn">Search</button>
+      </form>
+
+      <!-- Loading -->
+      <div class="sub-container loading-container">
+        <p>Loading...</p>
+      </div>
+
+      <!-- Weather Info -->
+      <div class="sub-container user-info-container">
+        <div class="name">
+          <p data-cityName></p>
+          <img data-countryIcon />
+        </div>
+        <p data-weatherDesc></p>
+        <img data-weatherIcon alt="icon" />
+        <p data-temp></p>
+
+        <div class="parameter-container">
+          <div class="parameter">
+            <p>Windspeed</p>
+            <p data-windspeed></p>
+          </div>
+          <div class="parameter">
+            <p>Humidity</p>
+            <p data-humidity></p>
+          </div>
+          <div class="parameter">
+            <p>Clouds</p>
+            <p data-cloudiness></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
